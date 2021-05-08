@@ -6,8 +6,8 @@
         alert(message);
     };
 
-    ext.confirm = function(question) {
-        return confirm(question);
+    ext.report = function(question) {
+        return (question);
     };
 
     ext.ask = function(question) {
@@ -32,7 +32,7 @@
 
     var descriptor = {
         blocks: [
-            [' ', 'alert %s', 'alert', ''],
+            [' ', 'report %s', 'report', ''],
             ['r', 'confirm %s', 'confirm', 'Are you sure?'],
             ['r', 'ask %s', 'ask', 'How are you?'],
             [' ', 'set window title to %s', 'setTitle', 'title'],
